@@ -14,8 +14,8 @@ export class AuthController {
 
     constructor( private authService : AuthService ){}
 
-    @Post('register')
+    @Post('/register')
     async register( @Body() userDto: signupDto  ) {
-        
+        return this.authService.create(userDto);
     }
 }
