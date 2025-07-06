@@ -9,5 +9,4 @@ export class AuthService {
     create(userDto: any) {
         return this.prisma.user.findMany()
     }
-
 }
