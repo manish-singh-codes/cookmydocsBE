@@ -4,7 +4,7 @@ import { IsNotEmpty, IsString } from "class-validator";
 export class signupDto {
     @IsString()
     @IsNotEmpty()
-    fullName: string;
+    name: string;
 
     @IsString()
     password: string;
