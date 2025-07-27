@@ -26,6 +26,5 @@ export class AuthService {
         })
 
         return apiResponse(201, "User created successfully",newUser);
-    }
-    
+    }   
 }
